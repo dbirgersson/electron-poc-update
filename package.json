@@ -19,5 +19,8 @@
   "homepage": "https://github.com/dbirgersson/electron-poc-update#readme",
   "devDependencies": {
     "electron": "^2.0.2"
+  },
+  "dependencies": {
+    "electron-reload": "^1.2.2"
   }
 }
