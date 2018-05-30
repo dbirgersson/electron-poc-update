@@ -5,7 +5,10 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "release": "build"
   },
   "repository": {
     "type": "git",
@@ -18,9 +21,22 @@
   },
   "homepage": "https://github.com/dbirgersson/electron-poc-update#readme",
   "devDependencies": {
-    "electron": "^2.0.2"
+    "electron": "^2.0.2",
+    "electron-builder": "^20.15.1"
   },
   "dependencies": {
-    "electron-reload": "^1.2.2"
+    "electron-reload": "^1.2.2",
+    "electron-updater": "^2.21.10"
+  },
+  "build": {
+    "appId": "se.sverigesakassor.electron-poc-update",
+    "productName": "Electron POC AutoUpdate",
+    "copyright": "Copyright © 2018 ${author}",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "daniel.birgersson@gmail.com"
+      }
+    ]
   }
 }
