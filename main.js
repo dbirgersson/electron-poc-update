@@ -4,9 +4,7 @@ const autoUpdater = require("electron-updater").autoUpdater
 var log = require('electron-log')
 autoUpdater.logger = log
 autoUpdater.logger.transports.file.level = "info"
-autoUpdater.on("checking-for-update", function (_arg1) {
-  return log.info("Checking for update...");
-});
+
 autoUpdater.on("update-available", function (_arg2) {
   return log.info("Update available.");
 });
