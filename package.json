@@ -1,6 +1,6 @@
 {
   "name": "electron-poc-update",
-  "version": "1.0-alpha.2",
+  "version": "1.0-alpha.1",
   "description": "",
   "main": "main.js",
   "scripts": {
