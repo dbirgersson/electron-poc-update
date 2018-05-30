@@ -1,6 +1,6 @@
 {
   "name": "electron-poc-update",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -25,6 +25,7 @@
     "electron-builder": "^20.15.1"
   },
   "dependencies": {
+    "electron-log": "^2.2.14",
     "electron-reload": "^1.2.2",
     "electron-updater": "^2.21.10"
   },
